@@ -1,0 +1,29 @@
+USE wda_crud;
+-- cria a tabela do projeto
+CREATE TABLE customers (
+  id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  cpf_cnpj varchar(14) NOT NULL,
+  birthdate datetime NOT NULL,
+  address varchar(255) NOT NULL,
+  hood varchar(100) NOT NULL,
+  zip_code varchar(8) NOT NULL,
+  city varchar(100) NOT NULL,
+  state varchar(2) NOT NULL,
+  phone varchar(11) NOT NULL,
+  mobile varchar(11) NOT NULL,
+  ie varchar(15) NOT NULL,
+  created datetime NOT NULL,
+  modified datetime NOT NULL
+)
+USE wda_crud;
+-- cria a tabela do projeto
+CREATE TABLE revistas (
+  id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nome varchar(50) NOT NULL,
+  ano int NOT NULL,
+  edicao int NOT NULL,
+  datacadastro datetime NOT NULL,
+  modified datetime NOT NULL,
+  foto varchar(30) NULL
+)

@@ -1,0 +1,59 @@
+.dropdown{
+    margin-left: 60px;
+  }
+  .fa-users, .fa-handshake-simple{
+    margin-right: 13px
+  }
+  .fa-house{
+    margin-right: 20px
+  }
+  .fa-book-open-reader{
+    margin-right: 10px
+  }
+  .fa-plus, .fa-eye{
+    margin-right: 18px
+  }
+  .navbar-nav .nav-link {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        transform: translateX(0);
+    }
+
+    .dropdown-menu a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdown-menu a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-menu a:hover::after {
+        transform: translateX(0);
+    }
