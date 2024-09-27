@@ -35,7 +35,7 @@
                </li>   
                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="customers\add.php" role="button" data-bs-toggle="" aria-expanded="false">
-              <i class="fa-solid fa-plus"></i></i> Adicionar Revistas
+              <i class="fa-regular fa-newspaper"></i></i></i> Adicionar Revistas
               </a>
               </li>
               <li class="nav-item dropdown">
@@ -45,7 +45,7 @@
                </li>   
                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="clientes\customers\add.php" role="button" data-bs-toggle="" aria-expanded="false">
-              <i class="fa-solid fa-plus"></i></i> Adicionar Clientes
+              <i class="fa-solid fa-users-gear"></i></i></i> Adicionar Clientes
               </a>
               </li>       
         </div>
@@ -67,7 +67,7 @@
       .fa-book-open-reader{
         margin-right: 10px
       }
-      .fa-plus, .fa-eye{
+      .fa-plus, .fa-eye, .fa-users-gear, .fa-newspaper{
         margin-right: 18px;
         margin-left: 6px;
       }

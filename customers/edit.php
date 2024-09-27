@@ -28,15 +28,21 @@
     </div>
 
     <div class="row mb-4"> 
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-3">
             <label for="datacadastro">Data de Cadastro</label>
-            <input type="text" class="form-control" name="revista['datacadastro']" value="<?php echo $revista['datacadastro']; ?>" disabled>
+            <input type="text" class="form-control" name="revista['datacadastro']" value="<?php echo formatadata($revista['datacadastro'], "d/m/Y - H:i:s"); ?>" disabled>
         </div>
 
         <div class="form-group col-md-3">
-        <label for="foto">Capa do Livro</label>
-        <input type="file" name="foto" id="foto" class="form-control" accept="image/*">
-        <img src="<?php echo $revista['foto']?>" width="150" height="180px" />   
+            <label for="foto">Capa da Revista</label>
+            <input type="file" name="foto" id="foto" class="form-control" accept="image/*">
+            
+            <!-- Exibir a imagem atual se existir -->
+            <?php if (!empty($revista['foto'])): ?>
+                <img id="preview" src="<?php echo $revista['foto']; ?>" alt="Capa atual" style="max-width: 200px; max-height: 200px; margin-top: 30px; margin-bottom: 15px;">
+            <?php else: ?>
+                <img id="preview" alt="Sua imagem" style="display: none; max-width: 200px; max-height: 200px; margin-top: 30px; margin-bottom: 15px;">
+            <?php endif; ?>
         </div>
     </div>
     

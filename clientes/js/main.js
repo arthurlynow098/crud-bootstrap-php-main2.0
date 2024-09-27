@@ -7,6 +7,6 @@ $('#delete-modal').on('show.bs.modal', function (event) {
   var id = button.data('customer');
   
   var modal = $(this);
-  modal.find('.modal-title').text('Excluir Cliente #' + id);
+  modal.find('.modal-title').text('Excluir Cliente?');
   modal.find('#confirm').attr('href', '.php?id=' + id);
 })
