@@ -1,7 +1,7 @@
 
 <?php require_once "configphp.php"; ?>
 <?php require_once DBAPI; ?>
-
+oi gustavo amor
 <?php include(HEADERIN_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
