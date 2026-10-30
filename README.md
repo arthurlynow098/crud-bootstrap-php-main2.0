@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de crud-bootstrap-php-main2.0" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="crud-bootstrap-php-main2.0" width="100%">
 </p>
-
-<h1 align="center">crud-bootstrap-php-main2.0</h1>
 
 <p align="center">Cadastro, consulta, edição e exclusão de clientes em uma aplicação web.</p>
 
