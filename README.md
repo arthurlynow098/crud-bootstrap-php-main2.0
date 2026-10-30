@@ -4,7 +4,7 @@
 
 <p align="center">Cadastro, consulta, edição e exclusão de clientes em uma aplicação web.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="PHP · MySQL · Bootstrap" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="PHP · MySQL · Bootstrap" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Aplicação** | Arquivos da aplicação de clientes. | [Abrir aplicação →](clientes) |
-| **Configuração** | Configuração PHP usada pelo projeto. | [Abrir configuração →](clientes/configphp.php) |
-| **Interface** | Estilos Bootstrap usados nas páginas. | [Abrir interface →](clientes/css/bootstrap) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Aplicação</strong></td><td>Arquivos da aplicação de clientes.</td><td><a href="clientes">Abrir aplicação →</a></td></tr>
+<tr><td><strong>Configuração</strong></td><td>Configuração PHP usada pelo projeto.</td><td><a href="clientes/configphp.php">Abrir configuração →</a></td></tr>
+<tr><td><strong>Interface</strong></td><td>Estilos Bootstrap usados nas páginas.</td><td><a href="clientes/css/bootstrap">Abrir interface →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
