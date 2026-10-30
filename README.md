@@ -1,49 +1,52 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="crud-bootstrap-php-main2.0" width="100%">
+  <img src="assets/identity/banner.png" alt="crud-bootstrap-php-main2.0" width="100%">
 </p>
 
 <p align="center">Cadastro, consulta, edição e exclusão de clientes em uma aplicação web.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="PHP · MySQL · Bootstrap" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Aplicação</strong></td><td>Arquivos da aplicação de clientes.</td><td><a href="clientes">Abrir aplicação →</a></td></tr>
-<tr><td><strong>Configuração</strong></td><td>Configuração PHP usada pelo projeto.</td><td><a href="clientes/configphp.php">Abrir configuração →</a></td></tr>
-<tr><td><strong>Interface</strong></td><td>Estilos Bootstrap usados nas páginas.</td><td><a href="clientes/css/bootstrap">Abrir interface →</a></td></tr>
-</table>
+- **[Aplicação](clientes)** — Arquivos da aplicação de clientes.
+- **[Configuração](clientes/configphp.php)** — Configuração PHP usada pelo projeto.
+- **[Interface](clientes/css/bootstrap)** — Estilos Bootstrap usados nas páginas.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 A aplicação organiza o ciclo de vida completo do registro de clientes em módulos reutilizáveis: cabeçalho e rodapé unificados, camada de configuração e acesso a banco de dados (configphp.php e database.php), e fluxos dedicados para listagem tabular, visualização de ficha detalhada, formulário de inclusão, edição cadastral e exclusão segura.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
-| Recurso | Como funciona |
-|---|---|
-| Listagem de clientes | Tabela responsiva em Bootstrap exibindo os registros ativos com ações rápidas por linha. |
-| Cadastro e edição | Formulários estruturados para inserção e atualização dos dados cadastrais no MySQL. |
-| Visualização de detalhes | Página individual para consulta completa dos dados de um cliente sem risco de edição acidental. |
-| Exclusão de registros | Fluxo de remoção integrado ao banco de dados para manutenção da base. |
-| Templates modulares | Inclusão de cabeçalho (headerin.php / inc/) e ativos estáticos locais (Bootstrap e Font Awesome). |
+**Listagem de clientes**<br>
+Tabela responsiva em Bootstrap exibindo os registros ativos com ações rápidas por linha.
+
+**Cadastro e edição**<br>
+Formulários estruturados para inserção e atualização dos dados cadastrais no MySQL.
+
+**Visualização de detalhes**<br>
+Página individual para consulta completa dos dados de um cliente sem risco de edição acidental.
+
+**Exclusão de registros**<br>
+Fluxo de remoção integrado ao banco de dados para manutenção da base.
+
+**Templates modulares**<br>
+Inclusão de cabeçalho (headerin.php / inc/) e ativos estáticos locais (Bootstrap e Font Awesome).
 
 <a id="tecnologias"></a>
 
-![Tecnologias](assets/docs/section-04.svg)
+## Tecnologias
 
 - **PHP** para processamento de formulários, roteamento de ações CRUD e comunicação com o banco;
 - **MySQL** para armazenamento relacional dos registros de clientes;
@@ -71,7 +74,7 @@ A camada de apresentação reaproveita componentes visuais da pasta inc/, enquan
 ```text
 crud-bootstrap-php-main2.0/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── customers/                      Páginas de listagem, adição, edição e visão
 ├── clientes/                       Versão modularizada do fluxo de clientes
 ├── inc/                            Cabeçalhos, rodapés e templates compartilhados
@@ -85,7 +88,7 @@ crud-bootstrap-php-main2.0/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-05.svg)
+## Como executar
 
 1. Clone o repositório dentro do diretório do seu servidor web (ex.: htdocs no XAMPP ou Laragon):
    ```bash
@@ -96,12 +99,12 @@ crud-bootstrap-php-main2.0/
 
 <a id="decisões-técnicas"></a>
 
-![Decisões técnicas](assets/docs/section-06.svg)
+## Decisões técnicas
 
 - **Ativos locais:** manter o Bootstrap e o Font Awesome dentro do repositório evita quebras de layout em laboratórios sem acesso a CDNs externas.
 - **Centralização de banco:** isolar as credenciais em configphp.php e as operações em database.php simplifica a migração entre ambientes locais.
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
