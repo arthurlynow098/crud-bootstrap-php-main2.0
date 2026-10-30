@@ -4,21 +4,33 @@
 
 <p align="center">Cadastro, consulta, edição e exclusão de clientes em uma aplicação web.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-C52E36?style=flat-square" alt="PHP">
-  <img src="https://img.shields.io/badge/MySQL-24272E?style=flat-square" alt="MySQL">
-  <img src="https://img.shields.io/badge/Bootstrap-24272E?style=flat-square" alt="Bootstrap">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="PHP · MySQL · Bootstrap" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Aplicação** | Arquivos da aplicação de clientes. | [Abrir aplicação →](clientes) |
+| **Configuração** | Configuração PHP usada pelo projeto. | [Abrir configuração →](clientes/configphp.php) |
+| **Interface** | Estilos Bootstrap usados nas páginas. | [Abrir interface →](clientes/css/bootstrap) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 A aplicação organiza o ciclo de vida completo do registro de clientes em módulos reutilizáveis: cabeçalho e rodapé unificados, camada de configuração e acesso a banco de dados (configphp.php e database.php), e fluxos dedicados para listagem tabular, visualização de ficha detalhada, formulário de inclusão, edição cadastral e exclusão segura.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -28,7 +40,9 @@ A aplicação organiza o ciclo de vida completo do registro de clientes em módu
 | Exclusão de registros | Fluxo de remoção integrado ao banco de dados para manutenção da base. |
 | Templates modulares | Inclusão de cabeçalho (headerin.php / inc/) e ativos estáticos locais (Bootstrap e Font Awesome). |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **PHP** para processamento de formulários, roteamento de ações CRUD e comunicação com o banco;
 - **MySQL** para armazenamento relacional dos registros de clientes;
@@ -56,7 +70,7 @@ A camada de apresentação reaproveita componentes visuais da pasta inc/, enquan
 ```text
 crud-bootstrap-php-main2.0/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── customers/                      Páginas de listagem, adição, edição e visão
 ├── clientes/                       Versão modularizada do fluxo de clientes
 ├── inc/                            Cabeçalhos, rodapés e templates compartilhados
@@ -68,7 +82,9 @@ crud-bootstrap-php-main2.0/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-05.svg)
 
 1. Clone o repositório dentro do diretório do seu servidor web (ex.: htdocs no XAMPP ou Laragon):
    ```bash
@@ -77,7 +93,9 @@ crud-bootstrap-php-main2.0/
 2. Crie o banco de dados MySQL e ajuste as credenciais (DB_NAME, DB_USER, DB_PASSWORD, DB_HOST) em configphp.php.
 3. Inicie o Apache e o MySQL e acesse http://localhost/crud-bootstrap-php-main2.0/ no navegador.
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+![Decisões técnicas](assets/docs/section-06.svg)
 
 - **Ativos locais:** manter o Bootstrap e o Font Awesome dentro do repositório evita quebras de layout em laboratórios sem acesso a CDNs externas.
 - **Centralização de banco:** isolar as credenciais em configphp.php e as operações em database.php simplifica a migração entre ambientes locais.
